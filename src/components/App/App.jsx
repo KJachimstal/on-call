@@ -1,5 +1,8 @@
 import React, { useEffect } from 'react';
 import Papa from 'papaparse';
+import Header from '../Header';
+import Ads from '../Ads';
+import Schedule from '../Schedule';
 
 import '../../assets/scss/index.scss';
 
@@ -21,7 +24,9 @@ const App = () => {
 
   return (
     <>
-
+      <Header />
+      <Ads />
+      <Schedule />
     </>
   )
 }
