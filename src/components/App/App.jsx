@@ -4,6 +4,7 @@ import Header from '../Header';
 import Ads from '../Ads';
 import Schedule from '../Schedule';
 
+import 'normalize.css';
 import '../../assets/scss/index.scss';
 
 const App = () => {
@@ -25,8 +26,10 @@ const App = () => {
   return (
     <>
       <Header />
-      <Ads />
-      <Schedule />
+      <div className="container">
+        <Ads />
+        <Schedule />
+      </div>
     </>
   )
 }

@@ -2,9 +2,7 @@ import React from 'react'
 
 const Ads = () => {
   return (
-    <>
-      Ads
-    </>
+    <div className="ads">Ads</div>
   )
 }
 
