@@ -6,6 +6,7 @@ body {
 
 .container {
   display: flex;
+  align-items: flex-start;
 }
 
 .ads, .schedule {
@@ -17,20 +18,17 @@ body {
   background-color: #ccc;
 }
 
-.schedule {
-  background-color: #eee;
-}
 
 .header {
   background-color: #333;
   padding: 10px 30px;
   display: flex;
   justify-content: space-between;
-
+  
   &__logo {
     height: 80px;
   }
-
+  
   &__time {
     display: flex;
     align-items: center;
@@ -41,7 +39,7 @@ body {
 
 .ads {
   padding: 10px;
-
+  
   &__ad {
     width: 100%;
     border-radius: 10px;
@@ -50,10 +48,25 @@ body {
 }
 
 .schedule {
-  padding: 10px;
-  display: flex;
-  align-items: flex-start;
-  flex-wrap: wrap;
+    
+  &__shift {
+    padding: 10px;
+
+    &__title {
+      background-color: #eee;
+      box-shadow: 0 10px 15px rgba(0, 0, 0, .1);
+      padding: 5px 0px 5px 15px;
+      border-radius: 10px;
+      font-size: 25px;
+      font-weight: 500;
+    }
+
+    &__crew {
+      display: flex;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+  }
 
   &__person {
     width: 25%;
