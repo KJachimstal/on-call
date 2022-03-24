@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,900&display=swap');
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -14,11 +14,11 @@ body {
 }
 
 .ads {
-  background-color: #333;
+  background-color: #ccc;
 }
 
 .schedule {
-  background-color: #333;
+  background-color: #eee;
 }
 
 .header {
@@ -51,21 +51,40 @@ body {
 
 .schedule {
   padding: 10px;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
 
   &__person {
-    border-radius: 10px;
-    width: 160px;
-    height: 250px;
-    background-color: #fff;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 25%;
+    padding: 10px;
+    box-sizing: border-box;
+
+    &__container {
+      height: 200px;
+      border-radius: 10px;
+      background-color: #fff;
+      box-shadow: 0 15px 25px rgba(0, 0, 0, .1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
 
     &__photo {
       width: 90px;
-      height: 100px;
-      border-radius: 10px;
-      padding-top: 15px;
-      display: block;
-      justify-content: center;
+      height: 90px;
+      border-radius: 100%;
+      margin-bottom: 15px;
+    }
+
+    &__name {
+      font-weight: bold;
+    }
+
+    &__login {
+      color: #aaa;
+      font-weight: 300;
     }
   }
 }
