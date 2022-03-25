@@ -22,7 +22,7 @@ const Header = () => {
       <div className="header__time">
         <Moment date={time} locale="pl" interval={1000} format="DD MMMM YYYY, HH:mm:ss" />
       </div>
-      <img src={logo} className="header__logo" />
+      <img src={logo} alt="ops-techIT" className="header__logo" />
     </div>
   )
 }
