@@ -12,7 +12,7 @@ const Schedule = () => {
         {[1, 2, 3, 4].map(i => (
           <div className="schedule__person" key={i}>
             <div className="schedule__person__container">
-              <img src={photo_placeholder} className="schedule__person__photo" />
+              <img src={photo_placeholder} alt="badge" className="schedule__person__photo" />
               <div className="schedule__person__name">Karol Kowalski</div>
               <div className="schedule__person__login">karkow</div>
             </div>
@@ -28,7 +28,7 @@ const Schedule = () => {
           {[1, 2, 3, 4].map(i => (
             <div className="schedule__person" key={i}>
               <div className="schedule__person__container">
-                <img src={photo_placeholder} className="schedule__person__photo" />
+                <img src={photo_placeholder} alt="badge" className="schedule__person__photo" />
                 <div className="schedule__person__name">Karol Kowalski</div>
                 <div className="schedule__person__login">karkow</div>
               </div>
@@ -44,7 +44,7 @@ const Schedule = () => {
           {[1, 2, 3, 4].map(i => (
             <div className="schedule__person" key={i}>
               <div className="schedule__person__container">
-                <img src={photo_placeholder} className="schedule__person__photo" />
+                <img src={photo_placeholder} alt="badge" className="schedule__person__photo" />
                 <div className="schedule__person__name">Karol Kowalski</div>
                 <div className="schedule__person__login">karkow</div>
               </div>
