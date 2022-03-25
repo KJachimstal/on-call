@@ -9,16 +9,6 @@ body {
   align-items: flex-start;
 }
 
-.ads, .schedule {
-  width: 50%;
-  height: 100vh;
-}
-
-.ads {
-  background-color: #ccc;
-}
-
-
 .header {
   background-color: #333;
   padding: 10px 30px;
@@ -37,9 +27,19 @@ body {
   }
 }
 
+.ads, .schedule {
+  width: 50%;
+  height: 100vh;
+  background-color: #ccc;
+}
+
 .ads {
   padding: 10px;
   
+  img {
+    object-fit: cover;
+  }
+
   &__ad {
     width: 100%;
     border-radius: 10px;
@@ -101,4 +101,8 @@ body {
       font-weight: 300;
     }
   }
+}
+
+.slide {
+  width: 100%;
 }
