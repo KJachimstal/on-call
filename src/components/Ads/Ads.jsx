@@ -1,22 +1,18 @@
 import React from 'react';
 import howToCutTicket from '../../assets/images/How-to-cut-ticket-RIVER.png';
+import amazon from '../../assets/images/amazon-logo-white.png';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
 const Ads = () => {
   const settings = {
-    dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
     adaptiveHeight: true,
     arrows: false,
     autoplay: true,
-    autoplaySpeed: 3000,
-    // centerMode: true
-    // className: "slide"
+    autoplaySpeed: 3000
   };
 
   return (
@@ -27,10 +23,7 @@ const Ads = () => {
             <img src={howToCutTicket} alt="howToCutTicket" className = "slide"/>
           </div>
           <div>
-          <img src={howToCutTicket} alt="howToCutTicket" className = "slide" />
-          </div>
-          <div>
-          <img src={howToCutTicket} alt="howToCutTicket" className = "slide" />
+          <img src={amazon} alt="amazon" className = "slide" />
           </div>
         </Slider>
       </div>
